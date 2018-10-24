@@ -4,20 +4,32 @@
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 4
    Tutorial Case
-   
+
    Visual Style Sheet for Tree and Book Family Home Page
-   Author: 
-   Date:   
-   
+   Author: Ruiz and Jeremy
+   Date:   10/24/18
+
    Filename: tb_visual1.css
 
 */
 
 
 /* Figure Box Styles */
-
-
-
+figure {
+  margin: 20px auto 0px;
+  width: 80%;
+}
+figure img {
+  display: block;
+  width: 100%;
+}
+figure figcaption {
+  background-color: white;
+  font-family: 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-style: italic;
+  padding: 10px 0;
+  text-align: center;
+}
 
 /* HTML Styles */
 
@@ -39,5 +51,3 @@
 
 
 /* Footer Styles */
-
-
