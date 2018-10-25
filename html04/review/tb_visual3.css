@@ -62,7 +62,8 @@ figure img {
 }
 
 figure figcaption {
-    font-family: 'Palatino Linotype', Palantino, 'Times New Roman', serif;
+    font-family: 'Palatino Linotype', Palantino, 
+                 'Times New Roman', serif;
     font-style: italic;
     padding-top: 10px;
     padding-bottom: 10px;
