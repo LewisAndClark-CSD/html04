@@ -74,6 +74,8 @@ article {
     box-shadow: inset -10px -10px 25px rgba(184, 154, 112, 0.7);
 }
 
-
 /* Footer Styles */
-
+footer {
+    background: linear-gradient(325deg, rgb(180, 148, 104) 20%,
+                                rgb(40, 33, 23) 60%)
+}
