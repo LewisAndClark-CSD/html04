@@ -16,9 +16,9 @@
 /* HTML Styles */
 
 html {
-    position: fixed;
-    background: url(sd_back1.png);
-    width: 100%;
+    background: url(sd_back1.png) fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 
@@ -26,9 +26,11 @@ html {
 
 body {
     background-image: url(sd_back2.png);
-    background: radial-gradient(closest-corner circle at 40% 70%, white 15%, rgba(151, 151, 151, 0.5) 50%),
+    background: radial-gradient(closet-corner circle at 40% 70%, white 15%, rgba(151, 151, 151, 0.5) 50%),
                 radial-gradient(closest-corner circle at 80% 40%, white 15%, rgba(0, 0, 0, 0) 30%),
-                radial-gradient(closest-side at 10% 20%, white 20%, rgba(0, 0, 0, 0) 45%);
+                radial-gradient(closest-side at 10% 20%, white 20%, rgba(0, 0, 0, 0) 45%),
+                radial-gradient(5% 5% at 90% 10%, white 20%, rgba(0, 0, 0, 0) 40%;
+    background-color: rgb(151, 151, 151);
 }
                 
 
