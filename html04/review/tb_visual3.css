@@ -51,13 +51,33 @@ figure img {
 	border-image: url(tb_frame.png) 60px;
 	display: block;
 	width: 100%;
-	-webkit-filter: sepia(80%);
-	filter: sepia(80%);
+	-webkit-filter: sepia(0.8);
+	filter: sepia(0.8);
 }
 
-/* Article Styles */
+figcaption {
+	font-family: 'Palotino Linotype', Palotino, 'Times New Roman', serif;
+	font-style: italic;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 0px;
+	padding-left: 0px;
+	text-align: center;
+}
 
+
+
+/* Article Styles */
+article {
+	background: url(tb_back6.png) bottom right / 15% no-repeat;
+	border-bottom: 8px double rgb(147, 116, 68);
+	border-right: 8px double rgb(147, 116, 68);
+	border-bottom-right-radius: 80px;
+	box-shadow: inset -10px -10px 25px rgba(184, 154, 112, 0.7);
+}
 
 
 /* Footer Styles */
-
+footer{
+	background: linear-gradient(325deg, rgb(180, 148, 104) 20%, rgb(40, 33, 23) 60%);
+}
