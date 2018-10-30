@@ -73,7 +73,7 @@ div#cube {
 }
 
 div.cube_face {
-    postition: absolute;
+    position: absolute;
     width: 400px;
     height: 400px;
 }
