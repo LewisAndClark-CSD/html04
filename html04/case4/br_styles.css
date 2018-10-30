@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: Jason and Bethany
+   Date: 10/30/18
+	
+   Filename: br_styles.css
+
+*/
+
+/* HTML Styles */
+html {
+	background-image: url("br_paper.png");
+	background-size: cover;
+}
+
+/* Body Styles */
+body {
+	width: 95%;
+	min-width: 320px;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* Navigation List Styles */
+
+
+/* Section Left Styles */
+
+
+/* Footer Styles */
