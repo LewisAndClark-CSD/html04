@@ -1,23 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head>
-<!--
-    New Perspectives on HTML5 and CSS3, 7th Edition
-    Tutorial 4
-    Case Problem 4
-    
-    Browyer Realty Listing 2048
-   Author: Brett/Josh
-   Date: 10/30/18
+  <head>
+  <!--
+      New Perspectives on HTML5 and CSS3, 7th Edition
+      Tutorial 4
+      Case Problem 4
 
-    Filename: br_listing2048.html
-   --> 
-   <title>Browyer Realty</title>
-   <link href="br_reset.css" rel="stylesheet" />
-   <link href="br_styles.css" rel="stylesheet" />
-   <link href="br_effects.css" rel="stylesheet" />
-</head>
-<body>
-</body>
+      Browyer Realty Listing 2048
+      Author: Joshua Bentley / Brett
+      Date: 10/30/18
 
+      Filename: br_listing2048.html
+     -->
+     <title>Browyer Realty</title>
+     <link href="br_reset.css" rel="stylesheet" />
+     <link href="br_grid.css" rel="stylesheet" />
+     <link href="br_styles.css" rel="stylesheet" />
+     <link href="br_effects.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header> <!-- Add Dropshadow to me -->
+      <img src="br_logo.png" alt="Browyer Realty" />
+      <nav id="mainNav">
+        <ul>
+          <li><a href="javascript:void(0)">Residential</a></li>
+          <li><a href="javascript:void(0)">Business</a></li>
+          <li><a href="javascript:void(0)">Properties</a></li>
+          <li><a href="javascript:void(0)">Rentals</a></li>
+          <li><a href="javascript:void(0)">Appraisals</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div id="picture-container">
+        <img src="br_photo1.png" alt="" id="display" />
+      </div>
+      <div id="container">
+        <aside>
+          <nav id="images">
+            <a href="javascript:void(0)" id="Image1" ><img src="br_photo1.png" alt="Front View" /></a>
+            <a href="javascript:void(0)" id="Image2" ><img src="br_photo2.png" alt="Rear View" /></a>
+            <a href="javascript:void(0)" id="Image3" ><img src="br_photo3.png" alt="Side View" /></a>
+            <a href="javascript:void(0)" id="Image4" ><img src="br_photo4.png" alt="Dining Room" /></a>
+            <a href="javascript:void(0)" id="Image5" ><img src="br_photo5.png" alt="Kitchen" /></a>
+            <a href="javascript:void(0)" id="Image6" ><img src="br_photo6.png" alt="Living Room" /></a>
+            <a href="javascript:void(0)" id="Image7" ><img src="br_photo7.png" alt="Bedroom 1" /></a>
+            <a href="javascript:void(0)" id="Image8" ><img src="br_photo8.png" alt="Bedroom 2" /></a>
+            <a href="javascript:void(0)" id="Image9" ><img src="br_photo9.png" alt="Bedroom 3" /></a>
+          </nav>
+          <nav id="links">
+            <ul>
+              <li><a href="javascript:void(0)">More Details</a></li>
+              <li><a href="javascript:void(0)">Map</a></li>
+              <li><a href="javascript:void(0)">Request a Showing</a></li>
+              <li><a href="javascript:void(0)">Other Listings</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <div id="description_paragraph">
+          <h1>Listing 20481</h1>
+          <p>
+            Paradise found! This custom-built brand new home sits proudly on a 6.8-acre
+            high wooded site overlooking a 300-acre nature conservancy. The setting is
+            exceptional, and the home is every bit as exciting! A bright, open layout is
+            enhanced by vaulted ceilings, hardwood and tumbled, ceramic flooring, custom
+            maple cabinetry, upgraded fixtures, numerous windows, and incredible views.
+
+            There is much more. The property includes a 40x54 storage building - perfect
+            for a large boat and machinery. An exposed walkout on lower level leads down to
+            a beautiful wooded area.
+
+            An extra bathroom, bedroom, and family room can be added to the unfinished
+            basement for more living space.
+          </p>
+        </div>
+        <div id="description">
+          <ul id="leftList">
+            <li>Address:</li>
+            <li>Listing 2048</li>
+            <li>414 Mandel Road</li>
+            <li>Owatonna, MN  55060</li>
+          </ul>
+          <ul id="rightList">
+            <li>List Price: $412,800</li>
+            <li>Square Feet: 3,300</li>
+            <li>Bedrooms: 4</li>
+            <li>Baths: 2-1/2</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
