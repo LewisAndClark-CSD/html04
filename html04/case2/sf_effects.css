@@ -32,15 +32,38 @@
 		background-color:rgb(231,231,231);
 	}
 /* Left Section Styles */
-
-
+	
+	section#left nav.vertical{
+		border-radius: 25px;
+		border: 1px solid rgb(20, 167, 170);
+	}
+	
+	section#left nav.vertical h1{
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+	}
 
 
 /* Center Article Styles */
 
-
+	section#center article{
+		background: radial-gradient(white 30%, rgb(151,151,151));
+		border-radius: 50px;
+		border: 1px solid rgb(151,151,151);
+		box-shadow: 10px 10px 20px rgb(51,51,51);
+	}
 
 
 /* Blockquote Styles */
 
-
+	blockquote{
+		background-image: url(sf_speech.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		-webkit-filter: drop-shadow(5px 5px 10px rgb(51,51,51));
+		filter: drop-shadow(5px 5px 10px rgb(51,51,51));
+	}
+	
+	cite img{
+		border-radius: 50%;
+	}
