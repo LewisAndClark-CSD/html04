@@ -13,3 +13,123 @@
 
 */
 
+body, footer, h1, header, html, img, li, nav, p, section, ul {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header, h1, h2, nav, p, img, section, article, footer {
+    display: block;
+}
+
+html {
+    background: url(br_paper.png) fixed;
+    
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    min-width: 640px;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    background: radial-gradient(rgb(153, 153, 153), white);
+    
+}
+
+nav > img {
+    width: 100%;
+}
+
+nav li {
+    width: 20%;
+    float: left;
+    text-align: center;
+    background-color: rgba(255, 204, 153, 0.6);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom: 3px solid black;
+    box-shadow: rgb(0, 0, 0) -1px -10px 5px;
+}
+
+section {
+    margin: 5px;
+    padding: 5px;
+}
+
+section h1 {
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 15px;
+    text-decoration: underline;
+    color: rgb(0, 75, 255);
+    text-shadow: rgb(0, 0, 0) -5px -5px 15px;
+}
+
+section img {
+    border-radius: 15px;
+    box-shadow: rgb(0, 0, 0) -5px -10px 15px;
+}
+
+section#front {
+    float: left;
+}
+
+section#rear {
+    float: left;
+}
+
+section#side {
+    float: left;
+}
+
+section#dining {
+    float: left;
+}
+
+section#kitchen {
+    float: left;
+}
+
+section#living {
+    float: left;
+}
+
+section#b1 {
+    float: left;
+}
+
+section#b2 {
+    float: left;
+}
+
+section#b3 {
+    float: left;
+}
+
+article {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+article h2 {
+    text-decoration: underline;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+footer {
+    font-size: 1.05em;
+    padding-left: 20px;
+}
