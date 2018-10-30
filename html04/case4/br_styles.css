@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: Austin A and Lane D
+   Date: 10/30/18
+	
+   Filename: br_styles.css
+
+*/
+/* Main Styles */
+html {
+    background: url(br_paper.png);
+    background-attachment: fixed;
+    background-position: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+body {
+    background-color: rgba(105, 144, 206, 0.5);
+    padding-left: 300px;
+    padding-right: 300px;
+    text-align: left;
+}
+
+body > header img {
+    width: 50%;
+    position: relative;
+}
+
+footer {
+    clear:both;
+    background: radial-gradient(circle at 40% 70%, white 15%, rgba(151, 151, 151, 0.5) 50%);
+}
+
+
+
+    
+/* Section Styles */
+section#left {
+    background-image: linear-gradient(to right, rgb(93, 142, 221), rgb(203, 209, 219));
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    border: double 2px rgb(58, 77, 109);
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+
+figure img {
+    filter:grayscale(0.8);
+}
+
+figure#photo1 {
+    float: left;
+    padding-right: 10px;
+}
+
+figure#photo2 {
+    float: left;
+}
+
+figure#photo3 {
+    float: left;
+    padding-right: 10px;
+}
+
+figure#photo4 {
+    float: left;
+     
+}
+
+figure#photo5 {
+    float: left;
+    padding-right: 10px;
+}
+
+figure#photo6 {
+    float: left;
+    
+}
+
+figure#photo7 {
+    float: left;
+    padding-right: 10px;
+}
+
+figure#photo8 {
+    float: left;
+}
+
+figure#photo9 {
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translateX(23px);
+}
+
+section#center {
+    text-shadow: 3px 3px 30px rgb(0, 0, 0);
+}
+/* Links Styles */
+nav.last a li {
+    
+
+
+
+/* Transform Styles */
