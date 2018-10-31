@@ -79,13 +79,41 @@
     }
     body aside nav {
       float:left;
+      width: 20%;
       padding-top: 60px;
       padding-bottom: 60px;
     }
     body aside nav ul li {
       padding-top: 5px;
     }
+  
+  /* Section Grid */
+    body section > img {
+      clear: both;
+    }
 
+    body section > img::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+    
+    body section > img {
+      width: 50%;
+    }
+    
+    body section aside {
+      clear: both;
+      float: right;
+      width: 25%;
+    }
+    
+    body section aside::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+    
 /* Image Styles */
   header img {
       width: 100%;
