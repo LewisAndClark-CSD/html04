@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: Tori and Lauren
+   Date: 10/30/18
+	
+   Filename: br_styles.css
+
+*/
+
+
+/*HTML Styles*/
+	html{
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		max-height:960px;
+		max-width: 800px;
+		background-image: url(br_paper.png);
+	}
+
+/*Body Styles*/
+
+
+/*Header Styles*/
+
+	body> header > img {
+		display: block;
+		width: 100%;
+	}
+
+/*Navigation Styles*/
+	body > header > nav.horizontal li {
+		display: block;
+		float: right;
+		position: relative;
+		width:20%;
+	}
+	/*body > header > nav.horizontal li a {
+		display: block;
+		height: 3em;
+		font-size: 1.2em;
+		letter-spacing: 0.15em;
+		text-align: center;
+		width: 100%;
+	}*/
+
+/*Aside Styles*/
+
+
+
+/*Article Styles*/
+
+
+/*Aside Link Styles*/
+
+
+
+/*Section Styles*/
+
+
+/*Footer Styles*/
+	footer{
+		clear:both;
+		width:100%;
+		text-align: center;
+	}
+
