@@ -39,8 +39,10 @@ section aside h1 {
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
 }
-
 section {
 	perspective: 450px;
+}
+section#left aside {
+	transform: 
 }
 /* Cube Styles */
