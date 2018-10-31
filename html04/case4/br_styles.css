@@ -13,7 +13,7 @@
 
 */
 
-body, footer, h1, header, html, img, li, nav, p, section, ul {
+body, footer, h1, header, div, html, img, li, nav, p, section, ul {
     font-size: 100%;
     margin: 0;
     padding: 0;
@@ -23,13 +23,13 @@ body, footer, h1, header, html, img, li, nav, p, section, ul {
     box-sizing: border-box;
 }
 
-header, h1, h2, nav, p, img, section, article, footer {
+div, header, h1, h2, nav, p, img, section, article, footer {
     display: block;
 }
 
 html {
-    background: url(br_paper.png) fixed;
-    
+    background-image: url(br_paper.png);
+    background-attachment: fixed;
 }
 
 body {
@@ -78,10 +78,15 @@ section h1 {
 section img {
     border-radius: 15px;
     box-shadow: rgb(0, 0, 0) -5px -10px 15px;
+    transform: perspective(300px);
 }
 
 section#front {
     float: left;
+}
+
+section#front img {
+    transform: rotate3d(30, -30, 0, 30deg);
 }
 
 section#rear {
@@ -92,8 +97,17 @@ section#side {
     float: left;
 }
 
+section#side img {
+    transform: rotate3d(30, 30, 0, 30deg);
+}
+
 section#dining {
     float: left;
+}
+
+section#dining img {
+    -webkit-filter: brightness(2.3);
+    filter: brightness(2.3);
 }
 
 section#kitchen {
@@ -108,28 +122,69 @@ section#b1 {
     float: left;
 }
 
+section#b1 img {
+    transform: rotate3d(-30, -30, 0, 30deg);
+}
+
 section#b2 {
     float: left;
+}
+
+section#b2 img {
+    transform:
 }
 
 section#b3 {
     float: left;
 }
 
+section#b3 img {
+    -webkit-filter: brightness(2);
+    filter: brightness(2);
+    transform: rotate3d(-30, 30, 0, 30deg);
+}
+
 article {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 10px;
     font-size: 1.1em;
     line-height: 1.3em;
 }
 
 article h2 {
+    padding-left: 30px;
     text-decoration: underline;
     font-size: 1.3em;
     line-height: 1.5em;
 }
 
-footer {
-    font-size: 1.05em;
-    padding-left: 20px;
+article li {
+    padding-left: 30px;
+    list-style-type: circle;
 }
+
+div a {
+    width: 25%;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(255, 204, 153, 0.6);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top: 3px solid black;
+    border-bottom: 1.5px solid black;
+}
+
+footer {
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.05em;
+    background: linear-gradient(60deg, white, rgb(153, 153, 153), rgba(255, 204, 153, 0.6));
+}
+
+
