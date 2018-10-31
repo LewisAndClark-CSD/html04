@@ -47,9 +47,16 @@ aside{
 
 aside h3 {
 	margin-left: 10px;
+	text-shadow: rgb(60, 60, 60) 2px 2px 3px;
 }
 
 aside p {
+	margin-left: 5px;
+}
+
+
+/* 2nd Links Styles */
+body > div > nav > ul > li{
 	margin-left: 5px;
 }
 
@@ -70,14 +77,23 @@ header img {
 /* Picture Styles */
 #pictures {
 	perspective: 800px;
+	margin-left: 25px;
 }
 
 .right {
 	transform: translateY(50px) rotateY(45deg);
+	-webkit-filter: brightness(0.5);
+	filter: brightness(1.5);
 }
 
 .left {
 	transform: translateY(50px) rotateY(-45deg);
+	filter: saturate(3);
+}
+
+.center{
+	-webkit-filter: blur(1.2px);
+	filter: blur(1.2px);
 }
 
 /* Footer Styles */
