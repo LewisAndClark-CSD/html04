@@ -114,6 +114,35 @@
       display: table;
     }
     
+  /* Section Nav Images Grid */
+    body section nav {
+      clear:both;
+      float: left;
+      width: 100%;
+    }
+    
+    body section nav::after {
+      clear:both;
+      content: "";
+      display: table;
+    }
+    
+    body section nav ul li a {
+        text-decoration: none;
+        display: block;
+        float: left;
+        width: 12.5%
+    }
+    
+    body section nav ul li a img {
+      width: 100%;
+    }
+    
+  /* Article Grid */
+    body section article {
+      clear: both;
+    }
+    
 /* Image Styles */
   header img {
       width: 100%;
