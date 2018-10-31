@@ -6,10 +6,13 @@
    Case Problem 4
    
    Browyer Realty Layout Styles
-   Author: 
-   Date: 
+   Author: Peter Classen, Kenaz Barks
+   Date: 10/31/18
 	
    Filename: br_styles.css
 
 */
 
+html {
+	background-image: url(br_paper.png);
+}
