@@ -12,3 +12,82 @@
    Filename: br_styles.css
 
 */
+
+/* General Styles */
+  address, article, aside, blockquote, body, cite, 
+  div, dl, dt, dd, em, figcaption, figure, footer, 
+  h1, h2, h3, h4, h5, h6, header, html, img, 
+  li, main, nav, ol, p, section, span, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;  
+  }
+
+/* Grid Styles */
+  body {
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 640px;
+      max-width: 960px;
+  }  
+
+  /* Header Nav Grid */
+    body header nav {
+        clear: both;
+    }
+
+    body header nav::after{
+        clear: both;
+        content: "";
+        display: table;
+
+    }
+
+    body header nav {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    body > header > nav ul {
+        list-style-type: none;
+    }
+
+    body header nav ul li a {
+        text-decoration: none;
+        display: block;
+        float: left;
+        width: 18.5%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+  /* Aside Nav Grid */
+    body aside nav {
+      clear: both;
+    }
+    
+    body aside nav::after {
+      clear:both;
+      content: "";
+      display: table;
+    }
+    body aside nav {
+      float:left;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    body aside nav ul li {
+      padding-top: 5px;
+    }
+
+/* Image Styles */
+  header img {
+      width: 100%;
+      background: url(br_paper.png) 100%;
+  }
