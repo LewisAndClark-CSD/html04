@@ -12,3 +12,37 @@
    Filename: br_styles.css
 
 */
+
+/* Grids */
+div.row {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+div.row::after {
+    clear:both;
+    content: "";
+    display: table;
+}
+
+div.column25::first-of-type {
+    float: left;
+    width: 25%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+div.column50 {
+    float: left;
+    width: 50%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+div.column25::last-of-type {
+    float: left;
+    width: 25%;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}

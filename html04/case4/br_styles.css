@@ -67,59 +67,6 @@
         margin-right: 5px;
     }
     
-  /* Aside Nav Layout */
-    body aside nav {
-      clear: both;
-    }
-    
-    body aside nav::after {
-      clear:both;
-      content: "";
-      display: table;
-    }
-    
-    body aside nav {
-      float:left;
-      width: 20%;
-      margin-top: 60px;
-    }
-    
-    body aside nav ul {
-      float: left;
-    }
-    
-    body aside nav ul li {
-      padding-top: 5px;
-    }
-  
-  /* Section Layout */
-    body img#image1 {
-      clear: both;
-    }
-
-    body img#image1::after {
-      clear: both;
-      content: "";
-      display: table;
-    }
-    
-    body img#image1 {
-      width: 50%;
-    }
-    
-   /* Blockquote Layout */ 
-    body blockquote {
-      clear: both;
-      float: right;
-      width: 25%;
-    }
-    
-    body blockquote::after {
-      clear: both;
-      content: "";
-      display: table;
-    }
-    
   /* Section Nav Images Layout */
     body section nav {
       clear:both;
