@@ -14,9 +14,9 @@
 */
 
 /* General Styles */
-  address, article, aside, blockquote, body, cite, 
-  div, dl, dt, dd, em, figcaption, figure, footer, 
-  h1, h2, h3, h4, h5, h6, header, html, img, 
+  address, article, aside, blockquote, body, cite,
+  div, dl, dt, dd, em, figcaption, figure, footer,
+  h1, h2, h3, h4, h5, h6, header, html, img,
   li, main, nav, ol, p, section, span, ul {
     margin: 0;
     padding: 0;
@@ -26,7 +26,7 @@
     background: transparent;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;  
+    box-sizing: border-box;
   }
 
 /* Layout Styles */
@@ -35,7 +35,7 @@
       margin-right: auto;
       min-width: 640px;
       max-width: 960px;
-  }  
+  }
 
   /* Header Nav Layout */
     body header nav {
@@ -52,6 +52,7 @@
     body header nav {
         padding-left: 5%;
         padding-right: 5%;
+        padding-bottom: 10px;
     }
 
     body > header > nav ul {
@@ -66,38 +67,42 @@
         margin-left: 5px;
         margin-right: 5px;
     }
-    
+
   /* Section Nav Images Layout */
     body section nav {
       clear:both;
       float: left;
       width: 100%;
     }
-    
+
     body section nav::after {
       clear:both;
       content: "";
       display: table;
     }
-    
+
     body section nav ul li a {
         text-decoration: none;
         display: block;
         float: left;
         width: 12.5%
     }
-    
+
     body section nav ul li a img {
       width: 100%;
     }
-    
+
   /* Article Layout */
     body section article {
       clear: both;
     }
-    
+
 /* Image Styles */
   header img {
       width: 100%;
       background: url(br_paper.png) 100%;
+  }
+
+  div.column-1-2 img {
+    width: 100%;
   }
