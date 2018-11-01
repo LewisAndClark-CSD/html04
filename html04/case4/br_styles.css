@@ -17,6 +17,7 @@
 /*HTML Styles*/
 	html{
 		background-color:hsl(210, 100%, 95%);
+		background: radial-gradient(hsl(210, 100%, 95%) 30%,hsl(210, 50%, 40%));
 	}
 
 /*Body Styles*/
@@ -27,6 +28,8 @@
 		margin-right: auto;
 		max-height:auto;
 		max-width: 950px;
+		box-shadow:rgb(0, 51, 102) 15px 0px 25px,
+		rgb(0, 51, 102) -15px 0px 25px;
 	}
 /*Header Styles*/
 
@@ -41,6 +44,9 @@
 		float: right;
 		position: relative;
 		width:20%;
+		border: 2px solid rgb(153, 102, 51);
+		border-radius: 50px;
+		background: linear-gradient(270deg, hsl(60, 100%, 90%), white 30%);
 	}
 	body > header > nav.horizontal li a {
 		display: block;
@@ -57,12 +63,26 @@
 		box-sizing:border-box;
 }
 	aside.address {
+		margin-top:20px;
+		margin-bottom:10px;
 		float:left;
 		width:50%;
+		line-height:15px;
+		text-align:center;
+		}
+		aside.address > h2{
+			color:rgb(0, 51, 153);
 		}
 	aside.house_desc{
+		margin-top:20px;
+		margin-bottom:10ox;
 		float:right;
 		width:50%;
+		line-height:15px;
+		text-align:center;
+	}
+	aside.house_desc > h2{
+		color:rgb(0, 51, 153);
 	}
 /*Article Styles*/
 	article.para{
@@ -78,7 +98,8 @@
 		float: right;
 		width:20%;
 		line-height:65px;
-		border: 2px solid rgb(153, 102, 51);
+
+	
 
 	}
 	aside > nav.vertical li a{
@@ -91,11 +112,13 @@
 		color:hsl(210, 50%, 40%);
 		text-align:center;
 		font-size:1em;
+	
 	}
 	article > h2{
 		color:hsl(210, 100%, 40%);
 		text-align:center;
 		font-size:1.8em;
+		text-shadow: 2px 2px  hsl(240, 100%, 20%);
 	}
 	article > p{
 		margin-top:5px;
@@ -106,8 +129,15 @@
 		clear:both;
 		width:100%;
 		box-sizing:border-box;
-		
+		-webkit-filter: sepia(80%);
+		filter: sepia(80%);
+		perspective: 450px;
 	}
+	
+	section img#center{
+		transform: translateZ(-50px);
+	}
+	
 /*Footer Styles*/
 	footer{
 		clear:both;
