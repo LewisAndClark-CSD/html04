@@ -36,8 +36,8 @@
       min-width: 640px;
       max-width: 960px;
       background-color: white;
-      box-shadow: 1px 0px 20px rgb(51, 51, 51),
-                  -1px 0px 20px rgb(51, 51, 51);
+      box-shadow: 1px 0px 10px rgb(51, 51, 51),
+                  -1px 0px 10px rgb(51, 51, 51);
 
   }
   html{
@@ -115,7 +115,12 @@
 /* Image Styles */
   header img {
       width: 100%;
-      background: url(br_paper.png) 100%;
+      transform: rotateX(30deg);
+      perspective: 50px;
+  }
+
+  header {
+    background: url(br_paper.png) 100%;
   }
 
   ul li img {
@@ -138,12 +143,19 @@
 
 /* Left Sidebar Styles */
 div.column-1-1 {
-  border: 2px black solid;
+  padding-left: 10px;
+  border: 2px lightcoral solid;
   border-radius: 10px;
+  background: radial-gradient(white 30% , mistyrose)
 }
 div.column-1-1 li {
   padding-top: 13%;
   padding-bottom: 14%;
   text-align: left;
   padding-left: 5px
+}
+
+/* Right Sidebar Styles*/
+div.column-1-3 {
+
 }
