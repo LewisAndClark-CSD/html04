@@ -13,6 +13,51 @@
 
 */
 
-html {
-	background-image: url(br_paper.png);
+	html {
+	background-image: url(GOD.png);
+
 }
+body{ 
+	background-image: url(youlooked.jpg);
+	min-width: 500px;
+	max-width: 1600px;
+	margin: auto;
+	box-shadow: blue 10px 0px 50px, blue -10px 0px 50px;
+}
+div img {
+	-webkit-filter: saturate(1000%);
+	filter: saturate(1000%);
+	transform: perspective(150px) rotateX(60deg);
+}
+
+/*header styles*/
+header  {
+		text-align: center;
+	}
+nav {
+	display: table;
+	width: 100%;
+	background: linear-gradient(#e66465, #9198e5);
+	border:  25px double rgb(214, 0, 171);
+
+}
+nav > ul {
+	display: table-row;
+}
+
+nav > ul > li {
+	display: table-cell;
+	text-align: center;
+	
+}
+address {
+	text-align: center;
+	width:200px;
+	height: 200px;
+	border-radius: 50%;
+	text-shadow: 3px 3px 5px #dd00b1;
+	background: radial-gradient(circle, white 15%, rgb(0, 213, 221) 50%);
+	
+}
+
+	
