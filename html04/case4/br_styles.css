@@ -108,6 +108,8 @@ article dl dd img{
     margin-left:auto;
     margin-right:auto;
     width:30%;
+	-webkit-filter:sepia(50%);
+	filter:sepia(50%);
 }
 
 article dl dt{
@@ -123,7 +125,4 @@ article dl dt{
     background-color:rgb(96, 67, 38);
     transform:  perspective(50px) rotateX(50deg);
 }
-
-/* transformation styles */
-
 
