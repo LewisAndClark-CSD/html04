@@ -13,6 +13,14 @@
 
 */
 
+/* Structural Styles */
+
+div, header, h1, h2, nav, p, img, section, article, footer {
+    display: block;
+}
+
+/* Typographic Styles */
+
 body, footer, h1, header, div, html, img, li, nav, p, section, ul {
     font-size: 100%;
     margin: 0;
@@ -23,14 +31,14 @@ body, footer, h1, header, div, html, img, li, nav, p, section, ul {
     box-sizing: border-box;
 }
 
-div, header, h1, h2, nav, p, img, section, article, footer {
-    display: block;
-}
+/* HTML Styles */
 
 html {
     background-image: url(br_paper.png);
     background-attachment: fixed;
 }
+
+/* Body Styles */
 
 body {
     font-family: 'Times New Roman', serif;
@@ -42,6 +50,8 @@ body {
     background: radial-gradient(rgb(153, 153, 153), white);
     
 }
+
+/* Navigation Styles */
 
 nav > img {
     width: 100%;
@@ -61,9 +71,12 @@ nav li {
     box-shadow: rgb(0, 0, 0) -1px -10px 5px;
 }
 
+/* Section Styles */
+
 section {
     margin: 5px;
     padding: 5px;
+    float: left;
 }
 
 section h1 {
@@ -75,34 +88,20 @@ section h1 {
     text-shadow: rgb(0, 0, 0) -5px -5px 15px;
 }
 
+/* Section Image Styles */
+
 section img {
     border-radius: 15px;
     box-shadow: rgb(0, 0, 0) -5px -10px 15px;
     transform: perspective(300px);
 }
 
-section#front {
-    float: left;
-}
-
 section#front img {
     transform: rotate3d(30, -30, 0, 30deg);
 }
 
-section#rear {
-    float: left;
-}
-
-section#side {
-    float: left;
-}
-
 section#side img {
     transform: rotate3d(30, 30, 0, 30deg);
-}
-
-section#dining {
-    float: left;
 }
 
 section#dining img {
@@ -110,32 +109,12 @@ section#dining img {
     filter: brightness(2.3);
 }
 
-section#kitchen {
-    float: left;
-}
-
-section#living {
-    float: left;
-}
-
-section#b1 {
-    float: left;
-}
-
 section#b1 img {
     transform: rotate3d(-30, -30, 0, 30deg);
 }
 
-section#b2 {
-    float: left;
-}
-
 section#b2 img {
     transform:
-}
-
-section#b3 {
-    float: left;
 }
 
 section#b3 img {
@@ -143,6 +122,8 @@ section#b3 img {
     filter: brightness(2);
     transform: rotate3d(-30, 30, 0, 30deg);
 }
+
+/* Article Styles */
 
 article {
     padding-left: 20px;
@@ -164,6 +145,8 @@ article li {
     list-style-type: circle;
 }
 
+/* Div Styles */
+
 div a {
     width: 25%;
     float: left;
@@ -178,6 +161,8 @@ div a {
     border-top: 3px solid black;
     border-bottom: 1.5px solid black;
 }
+
+/* Footer Styles */
 
 footer {
     padding-bottom: 10px;
