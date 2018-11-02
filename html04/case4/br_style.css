@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+
+   Browyer Realty Layout Styles
+   Author: Brett/Josh
+   Date: 10/30/18
+
+   Filename: br_styles.css
+
+*/
+
+body {
+  background: radial-gradient(ellipse at right bottom , #fffce4 20%, #ffffff);
+  overflow-x: hidden;
+}
+
+/* Navigation Styles */
+nav ul a li {
+  display: inline-block;
+}
+
+header nav ul a:link li, header nav ul a:visited li {
+  color: black;
+  background-color: rgba(102,255,255,0.2);
+  padding: 0.5%;
+  border: 1px solid black;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 0.3s;
+}
+
+header nav ul a:hover li, header nav ul a:active li {
+  color: white;
+  background-color: rgba(13,13,13,0.4);
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: 0.3s;
+}
+
+body div div.MainContent div.ContainerMain nav.SecondNav ul {
+  text-align: center;
+  border: 2px solid black;
+  margin: 10%;
+}
+
+body div div.MainContent div.ContainerMain nav.SecondNav ul a:link li, body div div.MainContent div.ContainerMain nav.SecondNav ul a:visited li {
+  font-size: 80%;
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+  color: black;
+  transition: 0.3s;
+}
+
+body div div.MainContent div.ContainerMain nav.SecondNav ul a:hover li, body div div.MainContent div.ContainerMain nav.SecondNav ul a:active li {
+  background-color: gray;
+  color: white;
+  transition: 0.6s;
+}
+
+/* Header */
+header {
+  background: url(br_paper.png);
+  padding-bottom: 1.5%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  box-shadow: inset 10px 0px 100px rgba(0,0,0,0.5);
+}
+
+header img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Main Content */
+div.MainContent {
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+
+/* Main Image */
+body div.grid-container div.MainContent div.area-overlap-Image {
+  text-align: center;
+}
+
+body div.grid-container div.MainContent div.area-overlap-Image img {
+  transform: perspective(300px) rotateY(10deg) scale(1.4);
+  transition-property: all;
+  transition-property: transform;
+  transition-duration: 0.6s;
+  border: 2px solid black;
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+  max-width:75%;
+  max-height:75%;
+}
+
+body div.grid-container div.MainContent div.area-overlap-Image img:hover {
+  transform: perspective(0px) rotateY(0deg) scale(1.3);
+  transition-property: all;
+  transition-property: transform;
+  transition-duration: 0.6s;
+  border: 2px solid black;
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+  max-width:75%;
+  max-height:75%;
+}
+
+/* Container */
+body div div div div.area-overlap-ImageSelectors {
+  text-align: center;
+  padding: 1%;
+  overflow: auto;
+}
+
+body div div div div.area-overlap-ImageSelectors img {
+  max-width:75%;
+  max-height:75%;
+  border: 2px solid white;
+  transition: 0.5s;
+}
+
+body div div div div.area-overlap-ImageSelectors img:hover {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 3px;
+  transition: 0.7s;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  padding: 2%;
+  background: linear-gradient(335deg ,#939393 20%, #ffffff);
+  box-shadow: inset 10px 0px 100px rgba(0,0,0,0.5);
+}
+
+footer p {
+  text-shadow: 0px 0px 5px black;
+}

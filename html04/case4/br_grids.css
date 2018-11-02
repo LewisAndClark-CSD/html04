@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+
+   Browyer Realty Grid Styles
+   Author: Brett/Josh
+   Date: 10/30/18
+
+   Filename: br_grid.css
+
+*/
+
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: ;
+  grid-template-rows: 25% 65% 10%;
+  grid-gap: 1px 1px;
+  grid-template-areas: "Header" "MainContent" "Footer";
+}
+
+.MainContent {
+  display: grid;
+  grid-area: MainContent;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 100%;
+  grid-gap: 1px 1px;
+  grid-template-areas: "Image ContainerMain";
+}
+
+.Image { grid-area: Image; }
+
+.ContainerMain {
+  display: grid;
+  grid-area: ContainerMain;
+  grid-template-columns: 15% 10% 75%;
+  grid-template-rows: 100%;
+  grid-gap: 1px 1px;
+  grid-template-areas: "ImageSelectors SecondNav ContainerSecondary";
+}
+
+.ContainerSecondary {
+  display: grid;
+  grid-area: ContainerSecondary;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 100%;
+  grid-gap: 1px 1px;
+  grid-template-areas: "ParagraphDescription Descriptions";
+}
+
+.Descriptions {
+  display: grid;
+  grid-area: Descriptions;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
+  grid-gap: 1px 1px;
+  grid-template-areas: "Address" "ListingInfo";
+}
+
+.Address { grid-area: Address; }
+
+.ListingInfo { grid-area: ListingInfo; }
+
+.ParagraphDescription { grid-area: ParagraphDescription; }
+
+.ImageSelectors { grid-area: ImageSelectors; }
+
+.SecondNav { grid-area: SecondNav; }
+
+.Header {
+  display: grid;
+  grid-area: Header;
+  grid-template-columns: 100%;
+  grid-template-rows: 80% 20%;
+  grid-gap: 1px 1px;
+  grid-template-areas: "." "NavbarContainer";
+}
+
+.NavbarContainer { grid-area: NavbarContainer; }
+
+.Footer { grid-area: Footer; }
+
+@media all and (-ms-high-contrast:none) {
+ .grid-container {
+    display: -ms-grid;
+    -ms-grid-columns: ;
+    -ms-grid-rows: 25% 65% 10%;
+  }
+
+ .MainContent {
+    display: -ms-grid;
+    -ms-grid-columns: 40% 60%;
+    -ms-grid-rows: 100%;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+ .Image {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+ .ContainerMain {
+    display: -ms-grid;
+    -ms-grid-columns: 15% 10% 75%;
+    -ms-grid-rows: 100%;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+
+ .ContainerSecondary {
+    display: -ms-grid;
+    -ms-grid-columns: 75% 25%;
+    -ms-grid-rows: 100%;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+
+ .Descriptions {
+    display: -ms-grid;
+    -ms-grid-columns: 100%;
+    -ms-grid-rows: 50% 50%;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+
+ .Address {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+ .ListingInfo {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+ .ParagraphDescription {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+ .ImageSelectors {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+ .SecondNav {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+
+ .Header {
+    display: -ms-grid;
+    -ms-grid-columns: 100%;
+    -ms-grid-rows: 80% 20%;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+ .NavbarContainer {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+ .Footer {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+}
