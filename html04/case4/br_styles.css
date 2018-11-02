@@ -93,14 +93,15 @@ section h1 {
 section img {
     border-radius: 15px;
     box-shadow: rgb(0, 0, 0) -5px -10px 15px;
-    transform: perspective(300px);
 }
 
 section#front img {
+    transform: perspective(300px);
     transform: rotate3d(30, -30, 0, 30deg);
 }
 
 section#side img {
+    transform: perspective(300px);
     transform: rotate3d(30, 30, 0, 30deg);
 }
 
@@ -110,16 +111,14 @@ section#dining img {
 }
 
 section#b1 img {
+    transform: perspective(300px);
     transform: rotate3d(-30, -30, 0, 30deg);
-}
-
-section#b2 img {
-    transform:
 }
 
 section#b3 img {
     -webkit-filter: brightness(2);
     filter: brightness(2);
+    transform: perspective(300px);
     transform: rotate3d(-30, 30, 0, 30deg);
 }
 
